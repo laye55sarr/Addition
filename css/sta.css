@@ -1,0 +1,157 @@
+/* STATISTICS */
+.others .top .statistics
+{
+    /* display: none; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    /* background-color: #000000; */
+}
+.others .top .statistics .sell-perform
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+.sell-perform .table
+{
+    height: calc(50% - 5px);
+    width: 100%;
+    background-color: #fff;
+    /* margin: 5px 0; */
+    border-radius: 10px;
+    position: relative;
+}
+.table .list
+{
+    height: calc(100% - 40px);
+    width: 100%;
+    padding: 0 10px;
+    /* background-color: #000; */
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.list .prod
+{
+    width: 100%;
+    position: relative;
+    /* background-color: #999; */
+}
+img
+{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+    margin: 0;
+}
+.list .plat .text
+{
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.others .top .statistics .progress
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: calc(50% - 0px);
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.others .top .statistics .progress .graph1
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(50% + 40px);
+    /* background-color: red; */
+}
+.ordonnees
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    width: 80px;
+    height: 300px;
+    font-family: poppins;
+    font-size: 11px;
+    /* background-color: #000;
+    color: #fff; */
+}
+.ordonnees span
+{
+    margin-top: 10px;
+}
+
+
+.axes
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: calc(100% - 80px);
+    height: 292px;
+    padding: 0px 15px;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    padding-bottom: 0;
+    margin: 0;
+}
+.axes .bar
+{
+    width: 20px;
+    /* height: 230px; */
+    margin: 0;
+    margin-right: 25px;
+    background-color: #999;
+    /* background-color: red; */
+    transform: translateY(1px);
+    /* border-radius: 10px 10px 0 0; */
+}
+
+
+.abscisses
+{
+    display: flex;
+    /* background-color: #000;
+    color: #fff; */
+    font-size: 11px;
+    width:  calc(100% - 93px);
+    height: calc(100% - 340px);
+    margin-left: 93px;
+    font-family: poppins;
+}
+.abscisses span
+{
+    margin-right: 19px;
+}
+
+.titregraph
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: arial;
+    text-decoration: underline;
+}

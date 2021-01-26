@@ -1,0 +1,348 @@
+.others .top .add-prod
+{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.others .top .add-prod .plats-box
+{
+    /* width: calc(50% - 5px); */
+    width: 100%;
+    height: 100%;
+}
+
+.others .top .add-prod .plats-box .scroll
+{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    /* overflow-x: scroll; */
+    /* background-color: #999; */
+}
+.contenu
+{
+    display: flex;
+    align-items: flex-start;
+    width: auto;
+    height: 100%;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+    /* background-color: #444; */
+}
+.add-cont
+{
+    justify-content: center;
+}
+.scroll img, .scroll .add
+{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 60px;
+    background-size: cover;
+    margin-bottom: 2px;
+}
+.scroll .add
+{
+    background-color: #999;
+    color: #fff;
+    font-family: courgette;
+    font-size: 42px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll .add:hover
+{
+    background-color: #000;
+}
+.titre
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: arial;
+    font-size: 11px;
+    /* text-transform: uppercase; */
+    text-align: center;
+    line-height: 11px;
+}
+
+.plats-box .table
+{
+    width: 100%;
+    height: calc(100% - 180px);
+}
+.plats-box .table .list
+{
+    height: 100%;
+}
+
+.plats-box .btns
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    /* background-color: #999; */
+}
+.plats-box .btns .span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    border: 1px solid #000;
+    /* background-color: #000; */
+    font-family: poppins;
+    font-size: 13px;
+    /* font-weight: 600; */
+    color: #000;
+    /* text-transform: uppercase; */
+    border-radius: 15px;
+    padding: 0px 20px;
+    margin: 0px 5px;
+    cursor: pointer;
+    /* background-color: #000; */
+}
+.plats-box .btns .span .plus
+{
+    /* color: #fff; */
+    font-size: 28px;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+/* AU CLIC SUR UN PLAT */
+.details-prod
+{
+    display: none;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 580px;
+    padding: 0px;
+    
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: #fff;
+    box-shadow: 0px 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 100px;
+    left: 15%;
+    border-radius: 15px;
+}
+.img-prod, .img-edit
+{
+    background: url(../img/Addition/J.webp) bottom center;
+    /* background: url(../img/bc.jpg) bottom center; */
+    background-position: bottom center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    /* background-color: #fff; */
+}
+.info-prod, .details-prod form
+{
+    height: calc(100% - 250px);
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    background-color: #fff;
+    font-family: poppins;
+    padding: 15px;
+}
+.info-prod .name-prod
+{
+    font-size: 23px;
+    font-weight: 600;
+    color: #777;
+}
+.info-prod .price-prod
+{
+    display: block;
+    font-weight: 609;
+    font-size: 20px;
+    /* font-family: arial; */
+    text-transform: uppercase;
+    /* color: red; */
+    color: #000;
+}
+.info-prod .desc-prod
+{
+    /* background-color: #999; */
+    display: block;
+    height: 150px;
+    overflow-y: scroll;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 15px 0;
+}
+.close
+{
+    /* border: 1px solid #000; */
+    border-radius: 15px 0 0 15px;
+    /* width: 25px; */
+    /* height: 25px; */
+    /* margin-left: calc(50% - 100px); */
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    padding: 3px 10px;
+    background-color: #000;
+    font-size: 11px;
+    color: #fff;
+}
+.actions
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.actions span, input[type=submit]
+{
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+    cursor: pointer;
+}
+.actions span.delete
+, .actions span.annuler
+{
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+    /* background-color: #999; */
+}
+form input
+{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #000;
+    /* background-color: #999; */
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: poppins;
+    /* padding: 0px 10px; */
+}
+form input[type=file]
+{
+    display: none;
+}
+textarea
+{
+    height: 130px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+label
+{
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: red;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+form input[type=submit]
+{
+    /* background-color: red; */
+    border: none;
+}
+
+.details-prod form, .img-edit
+{
+    display: none;
+}
+
+
+
+
+.add-category
+{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: auto;
+    padding: 15px 25px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    font-family: poppins;
+    right: 100px;
+    top: 200px;
+    background-color: #fff;
+    border-radius: 15px;
+    /* position: relative; */
+}
+.add-category .pic
+{
+    display: block;
+    height: 85px;
+    width: 85px;
+    background-color: #999;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.add-category label
+{
+    background-color: #999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 25px;
+}
+
+.add-category input
+{
+    width: 100%;
+    margin-top: 10px;
+}

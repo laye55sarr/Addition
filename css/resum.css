@@ -1,0 +1,275 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(../img/bc.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(180deg, #fff, orangered);
+    border-radius: 15px;
+}
+
+section
+{
+    display: flex;
+    margin-top: 80px;
+    padding: 0 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+h2
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    padding: 0px 15px;
+    font-size: 13px;
+    border-bottom: 1px solid #000;
+    margin: 0;
+    font-family: poppins;
+    text-transform: uppercase;
+}
+h2 span.icon
+{
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    background-color: darkred;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+article
+{
+    height: calc(100vh - 95px);
+    background-color: #fff;
+    border-radius: 15px;
+}
+article.products
+{
+    width: calc(33% - 7.5px);
+}
+.dates
+{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dates span
+{
+    font-size: 10px;
+    font-family: poppins;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    margin: 0px 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.dates span.active
+{
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+    border-color: red;
+}
+
+
+.prod_list
+{
+    padding: 0px;
+    padding-left: 10px;
+    overflow-y: scroll;
+    height: calc(100% - 130px);
+}
+.prod
+{
+    height: auto;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.prod .img
+{
+    background-color: #333;
+    background: url(../img/Addition/e.webp);
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.prod .more
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+.name
+{
+    font-weight: 600;
+}
+.prod .qqt
+{
+    position: absolute;
+    right: 50px;
+    font-size: 24px;
+    font-family: poppins;
+    font-weight: 600;
+    color: red;
+}
+.total
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    font-size: 11px;
+    color: red;
+    font-weight: 600;
+    height: 40px;
+}
+.total .amount
+{
+    font-family: courgette;
+    font-size: 25px;
+    color: #000;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RIGHT SIDE */
+article.others
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(66% - 7.5px);
+    /* height: 100%;s */
+    background-color: transparent;
+    /* padding: 0px 15px; */
+}
+
+/* BOX CHANGING CATEGORIES CONTAINER */
+.others .top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: rgb(255, 241, 241);
+    /* background-color: #000; */
+    border-radius: 15px;
+    padding: 0;
+}
+
+.others .top h2
+{
+    font-family: arial;
+    /* font-size: 20px; */
+    /* padding: 10px; */
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+article.others .boutons
+{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+}
+.others .boutons div
+{
+    background-color: #fff;
+    height: 100%;
+    width: calc(33.33% - 0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.others .boutons div.active
+{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+.plus
+{
+    font-family: courgette;
+    font-size: 45px;
+    color: red;
+    margin-right: 15px;
+}
+.others .boutons div.active .plus
+{
+    font-size: 50x;
+    font-weight: bold;
+    /* color: #fff; */
+}
+.diese
+{
+    font-size: 30px;
+}
+.b1
+{
+    border-radius: 15px 0 0 15px;
+}
+.b3
+{
+    border-radius: 0 15px 15px 0;
+}
+
+/* VOIR add-prod.css POUR LA GESTION DES PLATS */
+
+/* VOIR sta.css POUR LA GESTION DES STATISTIQUES */
+
+/* VOIR tables.css POUR LA GESTION DES TABLES ET QR CODES */

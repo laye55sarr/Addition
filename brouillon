@@ -1,0 +1,4 @@
+
+5  ServerAlias localhost
+6  DocumentRoot "${INSTALL_DIR}/www"
+7  <Directory "${INSTALL_DIR}/www/">
